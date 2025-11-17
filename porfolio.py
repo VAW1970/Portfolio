@@ -50,9 +50,9 @@ cols = st.columns(3)
 for i, projeto in enumerate(projetos):
     with cols[i]:
         st.image(projeto["imagem"], use_column_width=True)
-        st.subheader(projeto["nome"])
-        st.write(projeto["descricao"])
-        st.markdown(f"[▶️ Abrir App]({projeto['link']})")
+        st.markdown(f"### {projeto['nome']}")
+        st.markdown(f"<div style='min-height:80px'>{projeto['descricao']}</div>", unsafe_allow_html=True)
+        st.markdown(f"[▶️ Abrir App]({projeto['link']})", unsafe_allow_html=True)
 
 st.divider()
 
