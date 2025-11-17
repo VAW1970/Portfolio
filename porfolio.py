@@ -28,19 +28,19 @@ projetos = [
     {
         "nome": "🔍 Classificador de Vidraria",
         "descricao": "Modelo de IA treinado para identificar tipos de vidraria com base em características visuais.",
-        "imagem": "assets/vidros.png",
+        "imagem": "vidros.png",
         "link": "https://appartigos.streamlit.app/"
     },
     {
         "nome": "📚 Analisador de Artigos",
         "descricao": "App que usa LLMs para resumir e interpretar artigos científicos com LangChain e Groq.",
-        "imagem": "assets/artigos.png",
+        "imagem": "artigos.png",
         "link": "https://appartigos.streamlit.app/"
     },
     {
         "nome": "📊 Gerenciador de Reagentes",
         "descricao": "App para gerenciar reagentes químicos controlando validades e localização (User/Test#2025.",
-        "imagem": "assets/reagentes.png",
+        "imagem": "reagentes.png",
         "link": "https://vaw.pythonanywhere.com/"
     }
 ]
