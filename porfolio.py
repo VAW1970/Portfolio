@@ -40,7 +40,7 @@ projetos = [
     {
         "nome": "📊 Gerenciador de Reagentes",
         "descricao": "App para gerenciar reagentes químicos controlando validades e localização (User/Test#2025.",
-        "imagem": "assets/vendas.png",
+        "imagem": "assets/reagentes.png",
         "link": "https://vaw.pythonanywhere.com/"
     }
 ]
