@@ -18,7 +18,19 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="title">👨‍💻 Portfólio de Projetos</p>', unsafe_allow_html=True)
+st.markdown("""
+<style>
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+</style>
+<p class="title">👨‍💻 Portfólio de Projetos</p>
+""", unsafe_allow_html=True)
+
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
 
 st.divider()
