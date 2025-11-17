@@ -18,9 +18,10 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='font-size:100px; text-align:center;'>👨‍💻 Portfólio de Projetos</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-size:90px; text-align:center;'>👨‍💻 Portfólio de Projetos</h1>", unsafe_allow_html=True)
 
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Com mais de 35 anos de atuação em indústrias químicas, estou em transição para o universo da tecnologia, aplicando minha bagagem técnica em soluções digitais com IA e automação..</p>', unsafe_allow_html=True)
 
 st.divider()
 
