@@ -25,7 +25,7 @@ st.markdown("""
     font-weight: bold;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 </style>
 <p class="title">👨‍💻 Portfólio de Projetos</p>
