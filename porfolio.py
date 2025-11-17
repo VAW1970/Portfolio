@@ -7,7 +7,7 @@ st.set_page_config(page_title="Portfólio Valdir", layout="wide")
 st.markdown("""
 <style>
     .title {
-        font-size: 48px;
+        font-size: 120px;
         font-weight: bold;
         color: #2c3e50;
     }
@@ -18,15 +18,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-.title {
-    font-size: 200px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 </style>
 <p class="title">👨‍💻 Portfólio de Projetos</p>
 """, unsafe_allow_html=True)
