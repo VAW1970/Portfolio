@@ -18,10 +18,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
-</style>
-<p class="title">👨‍💻 Portfólio de Projetos</p>
-""", unsafe_allow_html=True)
+st.markdown('<p class="title">👨‍💻 Portfólio de Projetos</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
 
