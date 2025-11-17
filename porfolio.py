@@ -21,11 +21,11 @@ st.markdown("""
 st.markdown("""
 <style>
 .title {
-    font-size: 60px;
+    font-size: 200px;
     font-weight: bold;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 </style>
 <p class="title">👨‍💻 Portfólio de Projetos</p>
@@ -50,8 +50,8 @@ projetos = [
         "link": "https://appartigos.streamlit.app/"
     },
     {
-        "nome": "📊 Gerenciador de Reagentes",
-        "descricao": "App para gerenciar reagentes químicos controlando validades e localização (User/Test#2025.",
+        "nome": "🧪 Gerenciador de Reagentes",
+        "descricao": "App para gerenciar reagentes químicos controlando validades e localização (User/Test#2025).",
         "imagem": "reagentes.png",
         "link": "https://vaw.pythonanywhere.com/"
     }
@@ -70,6 +70,6 @@ st.divider()
 
 # Rodapé
 st.markdown("""
-**Contato:** [LinkedIn](linkedin.com/in/valdir-albino-wallauer-11682376) | [GitHub](https://github.com/VAW1970)  
+**Contato:** [LinkedIn](https://www.linkedin.com/in/valdir-albino-wallauer-11682376/) | [GitHub](https://github.com/VAW1970)  
 **Tecnologias:** Python · Streamlit · LangChain · Groq · Pandas · Scikit-learn · Git
 """)
