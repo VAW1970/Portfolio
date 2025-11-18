@@ -18,14 +18,26 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
+# Define o título do aplicativo
+st.title("") 
+
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    # Coloca a imagem na coluna central
+    st.image("Taleh azul 3D ícone.png", width=128)
+
 st.markdown(
     """
-    <h1 style='font-size:90px; text-align:center;'>
-        <img src="icon.png" alt="Ícone Taleh" width="90" height="90" style="vertical-align: middle; margin-right: 15px;">
+    <h1 style='font-size:90px; text-align:center; margin-top: 0px;'>
         Taleh Soluções Tecnológicas - Portfólio de Projetos
     </h1>
     """, 
     unsafe_allow_html=True
+)
+
+
 )
 
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
