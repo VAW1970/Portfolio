@@ -1,58 +1,44 @@
 import streamlit as st
 from PIL import Image
-
+import os
 
 st.set_page_config(page_title="Portfólio Valdir", layout="wide")
 
-# 1. INJEÇÃO DE CSS PERSONALIZADO 
-st.markdown("""
-<style>
-    .title {
-        font-size: 120px;
-        font-weight: bold;
-        color: #2c3e50;
-    }
-    .subtitle {
-        font-size: 20px;
-        color: #7f8c8d;
-    }
-    
-    /* 🎯 CÓDIGO PARA CENTRALIZAR O BLOCO DE TÍTULO 🎯 */
-    .header-container {
-        display: flex; /* Habilita o layout flexível */
-        justify-content: center; /* Centraliza horizontalmente o conteúdo */
-        align-items: center; /* Alinha o ícone e o texto verticalmente */
-        width: 100%;
-    }
-    
-    /* Estilo do Título Principal */
+# Nome do arquivo na raiz
+FILENAME = "Taleh azul 3D ícone.png"  
+
+# Verifica se arquivo existe na raiz
+if not os.path.exists(FILENAME):
+    st.error(f"Imagem não encontrada na raiz: '{FILENAME}'. Verifique nome e capitalização.")
+else:
+    # CSS para o título
+    st.markdown("""
+    <style>
     .title-h1 {
         font-size: 90px;
         font-weight: bold;
         color: #2c3e50;
-        margin: 0; /* Remove margens extras do h1 */
+        margin: 0;
     }
-</style>
-""", unsafe_allow_html=True)
+    .subtitle {
+        font-size: 20px;
+        color: #7f8c8d;
+        margin-top: 6px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
-
-# 2. CABEÇALHO COM IMAGEM INLINE E CENTRALIZADA
-st.markdown(
-    """
-    <div class="header-container">
-        <img src="Taleh azul 3D ícone.png" 
-             alt="Ícone Taleh" 
-             width="90" 
-             height="90" 
-             style="vertical-align: middle; margin-right: 20px;">
-        <h1 class="title-h1">
-            Taleh Soluções Tecnológicas - Portfólio de Projetos
-        </h1>
-    </div>
-    """, 
-    unsafe_allow_html=True
-)
-
+    # Layout centralizado com ícone à esquerda do texto
+    left, center, right = st.columns([1, 3, 1])
+    with center:
+        col_img, col_txt = st.columns([1, 6], gap="small")
+        with col_img:
+            img = Image.open(FILENAME)
+            st.image(img, width=90)
+        with col_txt:
+            st.markdown(f'<h1 class="title-h1">Taleh Soluções Tecnológicas - Portfólio de Projetos</h1>', unsafe_allow_html=True)
+            st.markdown(f'<div class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit e automação laboratoriais.</div>', unsafe_allow_html=True)
+            
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Com mais de 35 anos de atuação em indústrias químicas, estou em transição para o universo da tecnologia, aplicando minha bagagem técnica em soluções digitais com IA e automação..</p>', unsafe_allow_html=True)
 
