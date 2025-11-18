@@ -19,14 +19,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Define o título do aplicativo
-st.title("") 
-
-col1, col2, col3 = st.columns([1, 2, 1])
-
-with col2:
-    # Coloca a imagem na coluna central
-    st.image("Taleh azul 3D ícone.png", width=128)
+# Define o ícone do aplicativo
+st.image("Taleh azul 3D ícone.png", width=128)
 
 st.markdown(
     """
