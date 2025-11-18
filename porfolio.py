@@ -31,7 +31,7 @@ projetos = [
         "nome": "🔍 Classificador de Vidraria",
         "descricao": "Modelo de IA treinado para identificar tipos de vidraria com base em características visuais.",
         "imagem": "vidros.png",
-        "link": "https://appartigos.streamlit.app/"
+        "link": "https://labglassware.streamlit.app/"
     },
     {
         "nome": "📚 Analisador de Artigos",
