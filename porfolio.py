@@ -36,10 +36,10 @@ else:
             img = Image.open(FILENAME)
             st.image(img, width=90)
         with col_txt:
-            st.markdown(f'<h1 class="title-h1">Taleh Soluções Tecnológicas - Portfólio de Projetos</h1>', unsafe_allow_html=True)
-            st.markdown(f'<div class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit e automação laboratoriais.</div>', unsafe_allow_html=True)
-            
-st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
+            st.markdown(f'<h1 class="title-h1">Taleh Soluções em Tecnologia</h1>', unsafe_allow_html=True)
+            st.markdown(f'<h1 class="title-h1">Portfólio de Projetos</h1>', unsafe_allow_html=True)
+                        
+st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA com Python, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Com mais de 35 anos de atuação em indústrias químicas, estou em transição para o universo da tecnologia, aplicando minha bagagem técnica em soluções digitais com IA e automação..</p>', unsafe_allow_html=True)
 
 st.divider()
