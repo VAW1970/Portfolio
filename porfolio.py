@@ -4,12 +4,9 @@ from PIL import Image
 
 st.set_page_config(page_title="Portfólio Valdir", layout="wide")
 
-# ==============================================================================
-# 1. INJEÇÃO DE CSS PERSONALIZADO
-# ==============================================================================
+# 1. INJEÇÃO DE CSS PERSONALIZADO 
 st.markdown("""
 <style>
-    /* Estilos que você definiu */
     .title {
         font-size: 120px;
         font-weight: bold;
@@ -19,46 +16,39 @@ st.markdown("""
         font-size: 20px;
         color: #7f8c8d;
     }
-
-    /* 🎯 CÓDIGO PARA CENTRALIZAR A IMAGEM 🎯 */
-    .stImage {
-        text-align: center;
-        /* Usar flexbox para centralização robusta em diferentes layouts */
-        display: flex;
-        justify-content: center; 
-        align-items: center;
+    
+    /* 🎯 CÓDIGO PARA CENTRALIZAR O BLOCO DE TÍTULO 🎯 */
+    .header-container {
+        display: flex; /* Habilita o layout flexível */
+        justify-content: center; /* Centraliza horizontalmente o conteúdo */
+        align-items: center; /* Alinha o ícone e o texto verticalmente */
+        width: 100%;
     }
     
-    /* Aplicando o estilo de título */
+    /* Estilo do Título Principal */
     .title-h1 {
         font-size: 90px;
-        text-align: center;
-        margin-top: 0px; 
+        font-weight: bold;
+        color: #2c3e50;
+        margin: 0; /* Remove margens extras do h1 */
     }
 </style>
 """, unsafe_allow_html=True)
 
 
-# ==============================================================================
-# 2. CABEÇALHO COM ÍCONE E TÍTULO
-# ==============================================================================
-
-# Define o título do aplicativo (necessário apenas para a estrutura, vazio)
-st.title("") 
-
-# 3. ÍCONE CENTRALIZADO (Usando colunas)
-col1, col2, col3 = st.columns([1, 2, 1])
-
-with col2:
-    # A classe CSS '.stImage' injetada acima garante imagem centralizada
-    st.image("Taleh azul 3D ícone.png", width=128)
-
-# 4. TÍTULO CENTRALIZADO (Aplicando o Estilo)
+# 2. CABEÇALHO COM IMAGEM INLINE E CENTRALIZADA
 st.markdown(
     """
-    <h1 class="title-h1">
-        Taleh Soluções Tecnológicas - Portfólio de Projetos
-    </h1>
+    <div class="header-container">
+        <img src="Taleh azul 3D ícone.png" 
+             alt="Ícone Taleh" 
+             width="90" 
+             height="90" 
+             style="vertical-align: middle; margin-right: 20px;">
+        <h1 class="title-h1">
+            Taleh Soluções Tecnológicas - Portfólio de Projetos
+        </h1>
+    </div>
     """, 
     unsafe_allow_html=True
 )
