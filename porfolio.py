@@ -2,22 +2,14 @@ import streamlit as st
 from PIL import Image
 
 
-# 1. CONFIGURAÇÕES DA PÁGINA
 st.set_page_config(page_title="Portfólio Valdir", layout="wide")
 
-# 2. INJEÇÃO DE CSS PERSONALIZADO (Definição de Estilos)
+# ==============================================================================
+# 1. INJEÇÃO DE CSS PERSONALIZADO
+# ==============================================================================
 st.markdown("""
 <style>
-    /* Estilo para o TÍTULO PRINCIPAL */
-    .title-h1 {
-        font-size: 90px;
-        font-weight: bold;
-        color: #2c3e50;
-        text-align: center;
-        margin-top: 0px; /* Para ficar próximo ao ícone */
-    }
-    
-    /* Estilos outros */
+    /* Estilos que você definiu */
     .title {
         font-size: 120px;
         font-weight: bold;
@@ -27,20 +19,41 @@ st.markdown("""
         font-size: 20px;
         color: #7f8c8d;
     }
+
+    /* 🎯 CÓDIGO PARA CENTRALIZAR A IMAGEM 🎯 */
+    .stImage {
+        text-align: center;
+        /* Usar flexbox para centralização robusta em diferentes layouts */
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    /* Aplicando o estilo de título */
+    .title-h1 {
+        font-size: 90px;
+        text-align: center;
+        margin-top: 0px; 
+    }
 </style>
 """, unsafe_allow_html=True)
 
 
-# 3. CABEÇALHO COM ÍCONE (CENTRALIZAÇÃO)
-# Usando colunas para centralizar o ícone de forma confiável
+# ==============================================================================
+# 2. CABEÇALHO COM ÍCONE E TÍTULO
+# ==============================================================================
+
+# Define o título do aplicativo (necessário apenas para a estrutura, vazio)
+st.title("") 
+
+# 3. ÍCONE CENTRALIZADO (Usando colunas)
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    # Coloca a imagem na coluna central
+    # A classe CSS '.stImage' injetada acima garante imagem centralizada
     st.image("Taleh azul 3D ícone.png", width=128)
 
 # 4. TÍTULO CENTRALIZADO (Aplicando o Estilo)
-# Aplicamos o CSS personalizado na tag <h1>
 st.markdown(
     """
     <h1 class="title-h1">
