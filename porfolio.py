@@ -18,7 +18,15 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='font-size:90px; text-align:center;'>👨‍💻 Portfólio de Projetos</h1>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <h1 style='font-size:90px; text-align:center;'>
+        <img src="icon.png" alt="Ícone Taleh" width="90" height="90" style="vertical-align: middle; margin-right: 15px;">
+        Taleh Soluções Tecnológicas - Portfólio de Projetos
+    </h1>
+    """, 
+    unsafe_allow_html=True
+)
 
 st.markdown('<p class="subtitle">Bem-vindo! Explore meus projetos em IA, Streamlit, análise de dados e mais.</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Com mais de 35 anos de atuação em indústrias químicas, estou em transição para o universo da tecnologia, aplicando minha bagagem técnica em soluções digitais com IA e automação..</p>', unsafe_allow_html=True)
@@ -60,6 +68,6 @@ st.divider()
 
 # Rodapé
 st.markdown("""
-**Contato:** [LinkedIn](https://www.linkedin.com/in/valdir-albino-wallauer-11682376/) | [GitHub](https://github.com/VAW1970)  
+**Contato:** [LinkedIn](https://www.linkedin.com/in/valdir-albino-wallauer-11682376/) | [GitHub](https://github.com/VAW1970) | 
 **Tecnologias:** Python · Streamlit · LangChain · Groq · Pandas · Scikit-learn · Git
 """)
